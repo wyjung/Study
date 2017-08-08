@@ -6,7 +6,7 @@ import java.util.Scanner;
  */
 public class CamelCase {
 
-    /*
+    /* help ( stackoverflow)
      System.out.println(Arrays.toString("a;b;c;d".split("(?<=;)")));
      System.out.println(Arrays.toString("a;b;c;d".split("(?=;)")));
      System.out.println(Arrays.toString("a;b;c;d".split("((?<=;)|(?=;))")));
@@ -16,7 +16,9 @@ public class CamelCase {
      [a, ;, b, ;, c, ;, d]
     */
 
-    // s = saveChangesInTheEditor
+    // intput saveChangesInTheEditor
+    // split save / Changes / In / The / Editor
+    // output 5
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String s = in.next();
