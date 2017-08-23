@@ -18,6 +18,8 @@ public class DataStructureTest {
 
         linkedList.remove();
         System.out.println(linkedList.toString());
+
+        System.out.println(linkedList.get(2));
         /*Stack<Integer> stack = new Stack(Integer.class, 5);
 
         stack.push(0);

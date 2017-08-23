@@ -48,11 +48,20 @@ public class SimpleLinkedList<T> {
         return -1;
     }
 
-    /*public T get(int index) {
+    public T get(int index) {
 
+        Node currentNode = head;
+        int i = 0;
+        while (currentNode != null) {
+            if (index == i) {
+                return (T) currentNode.getItem();
+            }
+            currentNode = currentNode.next;
+            i++;
+        }
 
-
-    }*/
+        return null;
+    }
 
     public T remove(){
 
