@@ -16,7 +16,7 @@ public class SimpleLinkedList<T> {
         if (head == null) {
             head = new Node<>(element, null);
         } else {
-            head.next = new Node(element, head.next);
+            head = new Node(element, head.next);
         }
     }
 
@@ -42,6 +42,7 @@ public class SimpleLinkedList<T> {
             if (currentNode.getItem().equals(element)) {
                 return index;
             }
+            currentNode = currentNode.next;
             index++;
         }
 

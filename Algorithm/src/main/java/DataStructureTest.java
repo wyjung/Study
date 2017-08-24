@@ -9,17 +9,34 @@ public class DataStructureTest {
 
     public static void main(String[] args) {
 
-        SimpleLinkedList<String> linkedList = new SimpleLinkedList();
+        DoubleLinkedList<String> linkedList = new DoubleLinkedList<>();
+        linkedList.addFirst("A");
+        linkedList.addFirst("B");
+        linkedList.addFirst("C");
+        System.out.println(linkedList.toString());
+
+
+        linkedList.addLast("X");
+        System.out.println(linkedList.toString());
+
+        System.out.println(linkedList.removeFirst());
+        System.out.println(linkedList.toString());
+
+        System.out.println(linkedList.removeLast());
+        System.out.println(linkedList.toString());
+        /*SimpleLinkedList<String> linkedList = new SimpleLinkedList();
         linkedList.addLast("A");
         linkedList.addLast("B");
         linkedList.addLast("C");
 
         System.out.println(linkedList.toString());
+        System.out.println(linkedList.indexOf("B"));
 
         linkedList.remove();
         System.out.println(linkedList.toString());
 
-        System.out.println(linkedList.get(2));
+        System.out.println(linkedList.get(2));*/
+
         /*Stack<Integer> stack = new Stack(Integer.class, 5);
 
         stack.push(0);
